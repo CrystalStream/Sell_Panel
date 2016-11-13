@@ -52,7 +52,7 @@ class WasteController extends Controller
     	}    	
     	$waste->save();    
 
-    	Session::flash('change_waste','Gasto actualizado correctamente');
+    	Session::flash('change_waste','Gasto modificado correctamente');
     	return Redirect::to('config#waste-table');
     }
 }
